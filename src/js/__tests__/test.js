@@ -1,11 +1,6 @@
-import demo from "../app";
+import luhnAlgorithm from '../luhnAlgorithm';
 
-describe("Пример теста", () => {
-  test.each([
-    { str: "Hello!", expected: "Demo: Hello!" },
-    { str: "", expected: "Demo: " },
-    { str: 100, expected: "Demo: 100" },
-  ])("demo($str)", ({ str, expected }) => {
-    expect(demo(str)).toBe(expected);
-  });
+test('testing luhnAlgorithm', () => {
+	const result = luhnAlgorithm('4967538166331332');
+	expect(result).toBeTruthy();
 });

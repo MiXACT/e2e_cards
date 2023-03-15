@@ -121,3 +121,15 @@
 	background-position: 0 -25px;
 	opacity: .3;
 }
+
+#c_valid {
+	font-size: 1.5em;
+}
+
+#c_invalid {
+	font-size: 1.5em;
+}
+
+.cvalid_hidden {
+	display: none;
+}
