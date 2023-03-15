@@ -21,8 +21,8 @@ describe('Credit Card Validator form', () => {
 		});
 
 		browser = await puppetteer.launch({
-			executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/chrome',
-			headless: false, // show gui
+			// executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/chrome',
+			// headless: false, // show gui
 			// slowMo: 250,
 			// devtools: true, // show devTools
 		});

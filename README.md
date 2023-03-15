@@ -1,0 +1,1 @@
+[![CI](https://github.com/MiXACT/e2e_cards/actions/workflows/web.yml/badge.svg)](https://github.com/MiXACT/e2e_cards/actions/workflows/web.yml)
