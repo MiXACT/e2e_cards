@@ -1,6 +1,10 @@
 import puppeteer from 'puppeteer';
 import { fork } from 'child_process';
 
+/*
+* @jest-environment node
+*/
+
 jest.setTimeout(30000); // default puppeteer timeout
 
 describe('Credit Card Validator form', () => {
