@@ -24,9 +24,9 @@ describe('Credit Card Validator form', () => {
 
 		browser = await puppeteer.launch({
 			executablePath: revisionInfo.executablePath,
-			ignoreDefaultArgs: ['--disable-extensions'],
+			// ignoreDefaultArgs: ['--disable-extensions'],
 			headless: true,
-			args: ['--no-sandbox', '--disabled-setupid-sandbox'],
+			// args: ['--no-sandbox', '--disabled-setupid-sandbox'],
 		});
 		// browser = await puppeteer.launch({
 		// 	// executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/chrome',
