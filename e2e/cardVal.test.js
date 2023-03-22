@@ -1,4 +1,4 @@
-import puppetteer from 'puppeteer';
+import puppeteer from 'puppeteer';
 import { fork } from 'child_process';
 
 jest.setTimeout(30000); // default puppeteer timeout
@@ -19,13 +19,21 @@ describe('Credit Card Validator form', () => {
 				}
 			});
 		});
-
-		browser = await puppetteer.launch({
-			// executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/chrome',
-			// headless: false, // show gui
-			// slowMo: 250,
-			// devtools: true, // show devTools
-		});
+		const browserFetcher = puppeteer.createBrowserFetcher();
+		let revisionInfo = await browserFetcher.download('1095492');
+  
+		browser = await puppeteer.launch({
+			executablePath: revisionInfo.executablePath,
+			ignoreDefaultArgs: ['--disable-extensions'],
+			headless: true,
+			args: ['--no-sandbox', "--disabled-setupid-sandbox"]
+		  });
+		// browser = await puppeteer.launch({
+		// 	// executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/chrome',
+		// 	// headless: false, // show gui
+		// 	// slowMo: 250,
+		// 	// devtools: true, // show devTools
+		// });
 		page = await browser.newPage();
 	});
 
