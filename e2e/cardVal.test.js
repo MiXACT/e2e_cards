@@ -3,7 +3,7 @@ import { fork } from 'child_process';
 /**
  * @jest-environment jsdom
  */
-
+// eslint-disable-next-line
 import {setImmediate} from 'timers';
 jest.setTimeout(30000); // default puppeteer timeout
 
