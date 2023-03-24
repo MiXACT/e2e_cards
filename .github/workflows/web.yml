@@ -32,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install setimmediate
+        run: npm install setimmediate
+
       - name: Run linters
         run: npm run lint
 
