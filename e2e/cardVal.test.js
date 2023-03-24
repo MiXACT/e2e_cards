@@ -1,7 +1,8 @@
 import puppeteer from 'puppeteer';
 import { fork } from 'child_process';
 
-// import setimmediate from 'setimmediate';
+// eslint-disable-next-line
+import setimmediate from 'setimmediate';
 jest.setTimeout(30000); // default puppeteer timeout
 
 describe('Credit Card Validator form', () => {
